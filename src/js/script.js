@@ -180,6 +180,12 @@
               // reduce price variable
               price -= option.price;
             }
+
+            // find productImage from thisProduct.imageWrapper selector
+            let productImage = thisProduct.imageWrapper.querySelector(`.${paramId}-${optionId}`);
+              
+            // remove active class from productImage
+            if(productImage != null) productImage.classList.remove('active');
           }
         }
       }
