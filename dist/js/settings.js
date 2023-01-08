@@ -30,7 +30,7 @@ export const select = {
     },
     hourPicker: {
       wrapper: '.hour-picker',
-      input: `input[name="range"]`,
+      input: `input[name="hour"]`,
       output: '.output',
     },
     amount: {
@@ -43,6 +43,11 @@ export const select = {
     peopleAmount: '.people-amount',
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
+    floorPlan: '.floor-plan',
+    starters: '.booking-options',
+    phone: '.order-confirmation input[name="phone"]',
+    address: '.order-confirmation input[name="address"]',
+    orderForm: '.booking-form',
   },
   nav: {
     links: '.main-nav a',
@@ -82,6 +87,7 @@ export const classNames = {
   booking: {
     loading: 'loading',
     tableBooked: 'booked',
+    tableSelected: 'selected',
   },
   nav: {
     active: 'active',
@@ -111,6 +117,7 @@ export const settings = {
   },
   booking: {
     tableIdAttribute: 'data-table',
+    starterAttribute: 'starter',
   },
   db: {
     url: '//localhost:3131',
