@@ -32,7 +32,7 @@
     "globals": {
       "Handlebars": false,
       "rangeSlider": false,
-      "flatpickr": false
+      "flatpickr": false,
+      "Flickity": false
     }
 }
-

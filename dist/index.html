@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pizzeria</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,6 +22,7 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+          <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
         </div>
@@ -62,6 +64,9 @@
   </header>
 
   <div id="pages">
+    <section id="home">
+      <div class="home-page-wrapper container"></div>
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -96,6 +101,133 @@
         <li><a href="#remove">Remove<i class="fas fa-trash-alt"></i></a></li>
       </ul>
     </li>
+  </script>
+
+  <script id="template-home-page" type="text/x-handlebars-template">
+    <section class="info">
+      <div class="wrapper">
+        <div class="page-links">
+          <a class="link-item" href="#/order">
+            <div class="link-image">
+              <img src="images/pizza-1.jpg" alt="Image">
+            </div>
+            <div class="wrapper-content">
+              <h3 class="wrapper-title">ORDER ONLINE</h3>
+            </div>
+          </a>
+          <a class="link-item" href="#/booking">
+            <div class="link-image">
+              <img src="images/pizza-2.jpg" alt="Image">
+            </div>
+            <div class="wrapper-content">
+              <h3 class="wrapper-title">BOOK A TABLE</h3>
+            </div>
+          </a>
+        </div>
+        <div class="page-info">
+          <div class="wrapper-content">
+            <h3 class="wrapper-title">OPENING HOURS:</h3>
+            <h4 class="wrapper-subtitle">TUE-SUN, 12PM-12AM</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="carousel">
+      <div class="carousel-cell">
+        <div class="carousel-wrapper">
+          <div class="carousel-image">
+            <img src="images/pizza-3.jpg" alt="Image">
+          </div>
+          <div class="carousel-content">
+            <h3>AMAZING SERVIVE!</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperediet nec. Nunc sed dolor at elit lobortis sodales.</h4>
+            <p>- Margaret Osborne</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="carousel-wrapper">
+          <div class="carousel-image">
+            <img src="images/pizza-3.jpg" alt="Image">
+          </div>
+          <div class="carousel-content">
+            <h3>AMAZING SERVIVE!</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperediet nec. Nunc sed dolor at elit lobortis sodales.</h4>
+            <p>- Margaret Osborne</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="carousel-wrapper">
+          <div class="carousel-image">
+            <img src="images/pizza-3.jpg" alt="Image">
+          </div>
+          <div class="carousel-content">
+            <h3>AMAZING SERVIVE!</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperediet nec. Nunc sed dolor at elit lobortis sodales.</h4>
+            <p>- Margaret Osborne</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="wrapper">
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <img src="images/pizza-4.jpg" alt="Image">
+          </div>
+          <div class="gallery-buttons">
+            <i class="fas fa-heart"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <img src="images/pizza-5.jpg" alt="Image">
+          </div>
+          <div class="gallery-buttons">
+            <i class="fas fa-heart"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <img src="images/pizza-6.jpg" alt="Image">
+          </div>
+          <div class="gallery-buttons">
+            <i class="fas fa-heart"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <img src="images/pizza-7.jpg" alt="Image">
+          </div>
+          <div class="gallery-buttons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-share-nodes"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <img src="images/pizza-8.jpg" alt="Image">
+          </div>
+          <div class="gallery-buttons">
+            <i class="fas fa-heart"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <img src="images/pizza-9.jpg" alt="Image">
+          </div>
+          <div class="gallery-buttons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </section>
   </script>
 
   <script id="template-menu-product" type="text/x-handlebars-template">
@@ -245,6 +377,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="vendor/range-slider.min.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>
